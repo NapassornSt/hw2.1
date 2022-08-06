@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <form action="form-echo.php" method="get">
+            ชื่อเต็ม / ชื่อย่อสาขาวิชา : 
+            <input
+            type="text"
+            name="ชื่อเต็ม/ย่อสาขา"
+            placeholder="ชื่อสาขา">
+            <!-- title="Should only contain lowercase letters." -->
+            <br>
+
+            จำนวนเงินที่จะโอน : 
+            <input
+            type="text"
+            name="จำนวนเงิน"
+            placeholder="จำนวนเงิน"
+            title="Should only contain lowercase letters."><br>
+
+            อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย : <br>
+            <textarea id="อาหารที่ชื่นชอบ" name="อาหารที่ชื่นชอบ5ชนิด" rows="4" cols="50">
+            </textarea><br>
+            <!-- title="Please enter 5 types." -->
+            ค่าไฟฟ้า 3 เดือนที่ผ่านมา :<br>
+            <textarea id="ค่าไฟฟ้า" name="ค่าไฟฟ้า3เดือน" rows="4" cols="50"></textarea>
+            <br>
+           
+            รหัสบัตรประชาชน :
+            <input 
+            type="text"
+            name="รหัสบัตรปชช"
+            placeholder="รหัสบัตรประชาชน13ตัว"
+            pattern="[0-9]{13}"
+            title="Please enter 13 characters."><br>
+
+            ความพึงพอใจของหนังสือเล่มนี้ : 
+            <input
+            type="checkbox"
+            name="ความพึงพอใจ"
+            value="ดีมาก"
+            >
+            ดีมาก
+            <input
+            type="checkbox"
+            name="ความพึงพอใจ"
+            value="พอใจ"
+            >
+            พอใจ
+            <input
+            type="checkbox"
+            name="ความพึงพอใจ"
+            value="ปรับปรุง"
+            >
+            ปรับปรุง
+            <br>
+
+            อาการป่วย :<br>
+            <textarea id="อาการป่วย" name="อาการป่วย" rows="4" cols="50"></textarea>
+            <br>
+
+            ในช่วง3เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่ :
+            <input 
+            type="checkbox"
+            name="ได้รับวัคซีนในช่วง3เดือน"
+            value="ได้รับวัคซีน">
+            ได้รับวัคซีน
+            <input
+            type="checkbox"
+            name="ไม่ได้รับวัคซีนในช่วง3เดือน"
+            value="ไม่ได้รับวัคซีน">
+            ไม่ได้รับวัคซีน
+            <br>
+
+            รหัสผ่าน :
+            <input
+            type="password"
+            name="รหัสผ่าน"
+            placeholder="password"><br>
+
+            เวลาเริ่มเข้าเรียนและสิ้นสุดการเข้าเรียน :
+            เวลาเริ่มเข้าเรียน
+            <input
+            type="time"
+            name="เวลาเข้าเรียน">
+            เวลาสิ้นสุดการเข้าเรียน
+            <input
+            type="time"
+            name="เวลาเลิกรียน"><br>
+
+            วันเวลาที่ต้องไปพบแพทย์ :
+            วันที่ 
+            <input
+            type="date"
+            name="วันที่ต้องไปพบแพทย์"
+            >
+            เวลา 
+            <input
+            type="time"
+            name="เวลาต้องไปพบแพทย์"
+            >
+
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </body>
+</html>
